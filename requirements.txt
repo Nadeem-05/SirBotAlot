@@ -1,4 +1,4 @@
-discord.py
+git+https://github.com/Rapptz/discord.py
 youtube_dl
 async-timeout==3.0.1
 requests==2.25.1
