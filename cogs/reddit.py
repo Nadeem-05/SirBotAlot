@@ -32,5 +32,5 @@ class Reddit(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Reddit(bot))
+    await bot.add_cog(Reddit(bot))
     print("Reddit cog loaded Successfully")

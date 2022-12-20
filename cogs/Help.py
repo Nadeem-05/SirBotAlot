@@ -124,5 +124,5 @@ class Help(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Help(bot))
+    await bot.add_cog(Help(bot))
     print("Help Cog loaded successfully")

@@ -70,5 +70,5 @@ class Tools(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Tools(bot))
+    await bot.add_cog(Tools(bot))
     print("Tools cog loaded successfully")

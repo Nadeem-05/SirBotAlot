@@ -94,5 +94,5 @@ class Mcstatus(commands.Cog):
             await asyncio.sleep(600)
 
 def setup(bot):
-    bot.add_cog(Mcstatus(bot))
+    await bot.add_cog(Mcstatus(bot))
     print("Mcstatus cog loaded Successfully")
