@@ -14,7 +14,7 @@ with open('token.txt', 'r') as fp:
 
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
-        bot.load_extension(f'cogs.{filename[:-3]}')
+        await bot.load_extension(f'cogs.{filename[:-3]}')
 
 # EXECUTES THE BOT WITH THE SPECIFIED TOKEN. TOKEN HAS BEEN REMOVED AND USED JUST AS AN EXAMPLE.
 bot.run(TOKEN)
