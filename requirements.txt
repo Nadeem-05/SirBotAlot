@@ -10,3 +10,4 @@ PyNaCl
 aiodns
 Brotli
 cchardet
+dislash.py

@@ -19,7 +19,7 @@ class Events(commands.Cog):
     async def on_message(self, message):
         if "hello bot" in message.content.lower():
             # in this case don't respond with the word "Tutorial" or you will call the on_message event recursively
-            await message.channel.send('Hello')
+            await message.channel.reply('Hello')
             await self.bot.process_commands(message)
 
 
