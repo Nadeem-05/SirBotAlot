@@ -123,6 +123,6 @@ class Help(commands.Cog):
         await send_embed(ctx, emb)
 
 
-def setup(bot):
+async def setup(bot):
     await bot.add_cog(Help(bot))
     print("Help Cog loaded successfully")

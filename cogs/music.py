@@ -451,5 +451,5 @@ class Music(commands.Cog):
             if ctx.voice_client.channel != ctx.author.voice.channel:
                 raise commands.CommandError('Bot is already in a voice channel.')
 
-def setup(client):
+async def setup(client):
     await client.add_cog(Music(client))

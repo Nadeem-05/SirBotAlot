@@ -64,6 +64,6 @@ class Fun(commands.Cog):
         await ctx.send(f"Happy Birthday {arg}")
 
 
-def setup(bot):
+async def setup(bot):
     await bot.add_cog(Fun(bot))
     print("Fun cog loaded Successfully")

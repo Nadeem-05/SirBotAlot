@@ -28,9 +28,12 @@ class Reddit(commands.Cog):
         except:
             em.set_footer(text="Failed to get likes")
         await ctx.send(embed=em)
+    @commands.command()
+    async def hello2(self,ctx):
+        await ctx.send("hello")
+    @commands.command()
+    async def on_message    x
 
-
-
-def setup(bot):
+async def setup(bot):
     await bot.add_cog(Reddit(bot))
     print("Reddit cog loaded Successfully")

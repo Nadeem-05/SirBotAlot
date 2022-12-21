@@ -31,6 +31,6 @@ class Moderation(commands.Cog):
         await ctx.channel.send(f"{member} is banned! by {ctx.author.name}")
 
 
-def setup(bot):
+async def setup(bot):
     await bot.add_cog(Moderation(bot))
     print("Mod cog loaded Successfully")

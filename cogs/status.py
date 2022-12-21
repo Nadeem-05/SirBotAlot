@@ -93,6 +93,6 @@ class Mcstatus(commands.Cog):
             await the_embed.edit(embed=em)
             await asyncio.sleep(600)
 
-def setup(bot):
+async def setup(bot):
     await bot.add_cog(Mcstatus(bot))
     print("Mcstatus cog loaded Successfully")

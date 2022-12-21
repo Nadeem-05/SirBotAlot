@@ -23,6 +23,6 @@ class Events(commands.Cog):
             await self.bot.process_commands(message)
 
 
-def setup(bot):
+async def setup(bot):
     await bot.add_cog(Events(bot))
     print("Tools cog loaded successfully")
