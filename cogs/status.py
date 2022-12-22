@@ -6,7 +6,7 @@ import discord
 
 class Mcstatus(commands.Cog):
     """
-       Minecraft Server status,Updates every 10 minutes
+       Minecraft Server status
     """
 
     def __init__(self, bot):
@@ -14,6 +14,9 @@ class Mcstatus(commands.Cog):
 
     @commands.command(pass_context=True)
     async def mcstatus(self, ctx, arg):
+        """
+        MC Server Status, Updates every 10 minutes
+        """
         i = 0
         serverdata = arg
         data = requests.get(f"https://eu.mc-api.net/v3/server/ping/{serverdata}").json()
