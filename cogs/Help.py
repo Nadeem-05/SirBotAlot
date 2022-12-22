@@ -30,7 +30,7 @@ class Help(commands.Cog):
 
         # !SET THOSE VARIABLES TO MAKE THE COG FUNCTIONAL!
         prefix = ">"  # ENTER YOUR PREFIX - loaded from config, as string or how ever you want!
-        version = "Out of beta :)) 1.2"  # enter version of your code
+        version = "2.0"  # enter version of your code
 
         # setting owner name - if you don't wanna be mentioned remove line 49-60 and adjust help text (line 88)
         owner = 733633836964905001  # ENTER YOU DISCORD-ID
@@ -72,8 +72,8 @@ class Help(commands.Cog):
                 emb.add_field(name='Not belonging to a module', value=commands_desc, inline=False)
 
             # setting information about author
-            emb.add_field(name="About", value=f"The Bots is developed by Technical_difficulty#6957, based on discord.py.\n\
-                                    This bot is maintained by {owner}\n\
+            emb.add_field(name="About", value=f"The Bots is developed by Nadeem, based on discord.py.\n\
+                                    This bot is maintained by Nadeem\n\
                                     ")
             emb.set_footer(text=f"Bot is running {version}")
 

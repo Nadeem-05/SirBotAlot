@@ -13,6 +13,9 @@ class Moderation(commands.Cog):
     @commands.command()
     @commands.has_permissions(administrator=True)
     async def kick(self, ctx, member: discord.Member, *, reason=None):
+        """
+        Kicks User From The Guild
+        """
         await member.kick(reason=reason)
         await ctx.send(f"{member.name} has been kicked by {ctx.author.name}!")
 
@@ -20,6 +23,9 @@ class Moderation(commands.Cog):
     @commands.command()
     @commands.has_permissions(administrator=True)
     async def ban(self, ctx, member: discord.User = None, reason=None):
+        """
+        Bans User From The Guild
+        """
         if member == None or member == ctx.message.author:
             await ctx.channel.send("You cannot ban yourself")
             return

@@ -6,7 +6,7 @@ import discord
 
 class Mcstatus(commands.Cog):
     """
-       Completed but still in beta bugs inform to Technical_difficulty#6957
+       Minecraft Server status,Updates every 10 minutes
     """
 
     def __init__(self, bot):
@@ -92,7 +92,6 @@ class Mcstatus(commands.Cog):
 
             await the_embed.edit(embed=em)
             await asyncio.sleep(600)
-
 async def setup(bot):
     await bot.add_cog(Mcstatus(bot))
-    print("Mcstatus cog loaded Successfully")
+    print("mcstatus cog loaded successfully")

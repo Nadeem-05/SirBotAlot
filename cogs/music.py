@@ -325,7 +325,7 @@ class Music(commands.Cog):
         await ctx.voice_state.stop()
         del self.voice_states[ctx.guild.id]
         embed = discord.Embed(
-            title='Disconnected to Music <:rainblob:796632292503977995>',
+            title='Disconnected to Music :crying_cat_face:',
             color = 0xff0000
         )
         await ctx.send(embed=embed)
